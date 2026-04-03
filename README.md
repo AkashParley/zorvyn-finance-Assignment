@@ -60,9 +60,9 @@ A modern full-stack financial management system built with **FastAPI + Next.js**
 - JWT Authentication
 
 ### 🔹 Frontend
-- React 18 + Tailwind CSS + Recharts
+- React 18 
 - Tailwind CSS
-- Chart Libraries (for analytics)
+- Recharts (Chart Libraries) (for analytics)
 
 ### 🔹 Deployment
 - Backend → Railway
@@ -74,6 +74,16 @@ A modern full-stack financial management system built with **FastAPI + Next.js**
 ## ⚙️ System Design Flow
 ![FinanceOS Architecture](./assets/architecture.png)
 
+## 🎯 Why I Built This
+
+I wanted to build a production-ready financial system that demonstrates:
+
+- Real-world authentication (JWT)
+- Role-based access control (RBAC)
+- Data aggregation & analytics
+- Full deployment pipeline (Railway + Vercel)
+
+This project reflects how modern SaaS dashboards are designed and deployed.
 ## 🔐 API Overview
  
 All endpoints are prefixed with `/api/v1`.
