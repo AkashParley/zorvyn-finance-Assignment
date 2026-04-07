@@ -1,6 +1,11 @@
 // Always hit the FastAPI backend (port 8000), not the CRA dev server (3000/3001).
 // Relative URLs like `/api/v1/...` would resolve to the wrong host and cause "Failed to fetch".
-const API_ORIGIN = process.env.REACT_APP_API_URL || "http://127.0.0.1:8000";
+const API_ORIGIN = process.env.REACT_APP_API_URL;
+
+if (!API_ORIGIN) {
+  throw new Error("API URL is not defined. Please set REACT_APP_API_URL");
+}
+
 const BASE = "/api/v1";
 const BASE_URL = `${API_ORIGIN.replace(/\/+$/, "")}${BASE}`;
 
